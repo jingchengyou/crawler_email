@@ -1,0 +1,25 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ShuiMu	../shuimu.py	/^class ShuiMu(object):$/;"	kind:class	line:21
+__init__	../shuimu.py	/^    def __init__(self, theme='Career_Campus', page=1):$/;"	kind:member	line:22
+args	../shuimu.py	/^    args = sys.argv$/;"	kind:variable	line:224
+extract.py	../extract.py	1;"	kind:file	line:1
+extract_t.py	../extract_t.py	1;"	kind:file	line:1
+get_articles	../shuimu.py	/^    def get_articles(self):$/;"	kind:member	line:43
+get_comment	../shuimu.py	/^    def get_comment(self):$/;"	kind:member	line:119
+get_comment	../test.py	/^def get_comment():$/;"	kind:function	line:18
+get_max_page	../shuimu.py	/^    def get_max_page(self):$/;"	kind:member	line:36
+greenlets	../extract.py	/^    greenlets = []$/;"	kind:variable	line:80
+main	../extract.py	/^def main():$/;"	kind:function	line:13
+main	../extract_t.py	/^def main():$/;"	kind:function	line:13
+main	../shuimu.py	/^def main():$/;"	kind:function	line:183
+main	../test.py	/^def main():$/;"	kind:function	line:85
+main_comment	../shuimu.py	/^def main_comment():$/;"	kind:function	line:216
+process_string	../shuimu.py	/^    def process_string(raw_string):$/;"	kind:member	line:31
+process_string	../test.py	/^def process_string(raw_string):$/;"	kind:function	line:13
+shuimu.py	../shuimu.py	1;"	kind:file	line:1
+test.py	../test.py	1;"	kind:file	line:1
