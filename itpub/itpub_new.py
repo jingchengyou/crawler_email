@@ -76,7 +76,7 @@ class ITpub(object):
 
             self.get_max_page()
 
-        for page in range(self.page, self.max_page + 1):
+        for page in range(self.page, 11):
             print('\ngo to page:', page)
             with open('.progress.json', 'w+') as f:
                 json.dump({
