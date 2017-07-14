@@ -117,12 +117,12 @@ class V2EX(object):
                         publish_time = (datetime.now() - timedelta(days=before_day)).strftime('%Y-%m-%d')
                     else:
                         publish_time = publish_time_str.split()[2]
-                    if '2017-06-13' in publish_time:
+                    if '2017-06-27' in publish_time:
                         sys.exit(1)
 
                     href = article.xpath('//span[@class="item_title"]/a/@href')
 
-                    title = title = article.xpath('//span[@class="item_title"]/a/text()')
+                    title = article.xpath('//span[@class="item_title"]/a/text()')
 
                     if href and title:
                         href = 'https://www.v2ex.com' + href[0]
@@ -215,12 +215,13 @@ class V2EX(object):
                 )
                 m = self.col.find({'status': 'done'}).count()
                 n = self.col.count()
-                print('{} / {}, {:.1f}%'.format(m, n , 100*m/n))
+                print('{} / {}, {:.1f}%'.format(m, n, 100*m/n))
                 i += 1
                 
                 sleep_time = random.uniform(start, start+1)
                 print('sleep: {:.2f}'.format(sleep_time))
                 time.sleep(sleep_time)
+
 
 def main():
     try:
