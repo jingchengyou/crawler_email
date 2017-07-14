@@ -105,6 +105,18 @@ class ITpub(object):
 
                     publish_time = article.xpath('//td[@class="by cc"]/em/span')[0].text_content().strip()
 
+                    if publish_time:
+                        p = publish_time.split('-')
+                        year = p[0]
+                        month = p[1]
+                        day = p[2]
+                        if year != '2017':
+                            continue
+                        if int(month) < 5 and int(day) < 14:
+                            continue
+                    else:
+                        continue
+
                     href = article.xpath('//th[@class="new"]/a[2]/@href')
                     if not href:
                         href = article.xpath('//th[@class="common"]/a[2]/@href')
