@@ -246,9 +246,9 @@ def main():
         # break ### for debug
     gevent.joinall(greenlets)
 
-    print('delete progress')
-    os.remove('.progress.json')
-    print('done!')
+    # print('delete progress')
+    # os.remove('.progress.json')
+    # print('done!')
 
 def main_comment():
     greenlets = []
