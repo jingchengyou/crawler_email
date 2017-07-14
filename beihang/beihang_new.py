@@ -128,7 +128,7 @@ class Beihang(object):
                     day = int(update_time.split('-')[2].split()[0])
                     if year != '2017':
                         return
-                    if month <= 4 and day <= 26:
+                    if month <= 6 and day <= 19:
                         return
 
                     publish_time = article.xpath('//td[@class="f_author"]/span/text()')[0].strip()
