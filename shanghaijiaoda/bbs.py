@@ -254,12 +254,12 @@ def main():
 
     if choice == "就业信息" or int(choice) == 1:
         print("*****就业信息正在爬取*****")
-        # search.base_url = "https://bbs.sjtu.edu.cn/bbsdoc?board=JobInfo"
-        search.base_url = "https://bbs.sjtu.edu.cn/bbsdoc,board,JobInfo,page,7734.html"
+        search.base_url = "https://bbs.sjtu.edu.cn/bbsdoc?board=JobInfo"
+
     elif choice == "求职交流" or int(choice) == 2:
         print("*****求职交流正在爬取*****")
-        # search.base_url = "https://bbs.sjtu.edu.cn/bbsdoc?board=JobForum"
-        search.base_url = "https://bbs.sjtu.edu.cn/bbsdoc,board,JobForum,page,2998.html"
+        search.base_url = "https://bbs.sjtu.edu.cn/bbsdoc?board=JobForum"
+
     else:
         print("请选择1 or 2")
         return
