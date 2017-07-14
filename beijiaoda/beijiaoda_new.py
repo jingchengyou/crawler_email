@@ -119,7 +119,7 @@ class Beijiaoda(object):
                     day = int(update_time.split('-')[2].split()[0])
                     if year != 2017:
                         return
-                    if month <= 6 and day <= 3:
+                    if month <= 6 and day <= 24:
                         return
 
                     publish_time = article.xpath('//td[@class="by"]/em/span/text()')[0].strip()
