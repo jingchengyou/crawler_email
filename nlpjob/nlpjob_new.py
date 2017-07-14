@@ -49,7 +49,7 @@ class Nlpjob(object):
             'Cache-Control': 'no-cache',
         }   
         # for page in range(self.page, self.max_page+1):
-        for page in range(self.page, 445): # TODO check if next page exist
+        for page in range(self.page, 30): # TODO check if next page exist
             print('\ngo to page:', page)
             with open('.progress.json', 'w+') as f:
                 json.dump({
@@ -80,7 +80,7 @@ class Nlpjob(object):
                     article = html.fromstring(html.tostring(article))
 
                     publish_time = article.xpath('//span[@class="time-posted"]')[0].text_content().strip()
-                    if '2017-06-13' in publish_time:
+                    if '2017-06-27' in publish_time:
                         sys.exit(1)
 
                     href = article.xpath('//span[@class="row-info"]/a/@href')
