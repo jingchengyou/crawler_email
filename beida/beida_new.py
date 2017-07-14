@@ -24,6 +24,7 @@ from lxml import html
 from datetime import datetime, timedelta
 from pymongo import MongoClient
 
+
 class Beida(object):
     def __init__(self, page=1):
         self.page = page
@@ -129,7 +130,7 @@ class Beida(object):
                     day = int(update_time.split('-')[2])
                     if year != 2017:
                         return
-                    if month <= 6 and day <= 3:
+                    if month <= 6 and day <= 24:
                         return
 
                     publish_time = article.xpath('//div[@class="author l"]/div[@class="time"]/text()')[0].strip()
