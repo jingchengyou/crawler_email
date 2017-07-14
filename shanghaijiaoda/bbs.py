@@ -134,6 +134,7 @@ class JobSearch(object):
                 article_time = time_list[0] + '/' + time_list[1] + '/' + time_list[2] + " " + time_list[3] + ":" + \
                                time_list[
                                    4]
+            print(article_time)
         except AttributeError:
             pass
         # 电话
@@ -229,8 +230,8 @@ class JobSearch(object):
                 print("crawl出现错误，当前爬取页面为：")
                 print(page_url)
                 pass
-            # page_url = self.get_next_page(page_url)
-            page_url = re.sub(r'\d+', self.url_auto_minus, page_url)
+            page_url = self.get_next_page(page_url)
+            # page_url = re.sub(r'\d+', self.url_auto_minus, page_url)
         print('招聘信息总数：' + str(total_job_link))
         print('含有邮箱的招聘信息数目：' + str(success_link))
         if total_job_link:  # total_job_link不能为0
