@@ -100,7 +100,7 @@ class ShuiMu(object):
                     article = html.fromstring(html.tostring(article))
 
                     update_time = article.xpath('//td/a[@title="跳转至最后回复"]/text()')[0].strip()
-                    if '2017-06-13' in update_time:
+                    if '2017-06-27' in update_time:
                         print(update_time)
                         print(self.theme+' done')
                         return True
@@ -113,10 +113,10 @@ class ShuiMu(object):
                         day = p[2]
                         if year != '2017':
                             continue
-                        if int(month) < 6 and int(day) < 13:
+                        if int(month) < 6 and int(day) < 27:
                             continue
                     else:
-                        publish_time = '2017-06-27'
+                        publish_time = '2017-07-14'
 
                     href = article.xpath('//td[@class="title_9"]/a/@href')
                     title = title = article.xpath('//td[@class="title_9"]/a/text()')
